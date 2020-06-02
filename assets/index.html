@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Comic Viewer</title>
+
+    <link rel="stylesheet" tyle="text/css" href="./css/comic-app.css">
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="./js/comic-app.bundle.js"></script>
+  </head>
+  <body>
+    <div id="comic-app"></div>
+    <script>
+      let book = {
+        bid: 'b001',
+        title: 'MY HEXSCHOOL',
+        genres: ['fusce', 'vehicula', 'dolor'],
+        author: '',
+        status: 'ongoing',
+        rate: 4,
+        summary: '<p>If your banker breaks, you snap; if your apothecary by mistake sends you poison in your pills, you die.</p>\n\n<p>Therefore, I say, I saw that this situation of mine was the precise situation of every mortal that has this Siamese connexion with a plurality of other mortals.</p>\n',
+      };
+      let chapters = [{
+        cid: 'c001',
+        pid: 'b001',
+        title: 'The F2E Challenge Start!',
+        tags: [],
+        pages: [{
+          title: 'ch1 p01 title',
+          board: 1,
+        }, {
+          title: 'ch1 p02 title',
+          board: 2,
+        }, {
+          title: 'ch1 p03 title',
+          board: 3,
+        }, {
+          title: 'ch1 p04 title',
+          board: 4,
+        }, {
+          title: 'ch1 p05 title',
+          board: 5,
+        }, {
+          title: 'ch1 p06 title',
+          board: 6,
+        }, {
+          title: 'ch1 p07 title',
+          board: 7,
+        }, {
+          title: 'ch1 p08 title',
+          board: 8,
+        }, {
+          title: 'ch1 p09 title',
+          board: 9,
+        }, {
+          title: 'ch1 p10 title',
+          board: 10,
+        }, {
+          title: 'ch1 p11 title',
+          board: 11,
+        }, {
+          title: 'ch1 p12 title',
+          board: 12,
+        }],
+      }, {
+        cid: 'c002',
+        pid: 'b001',
+        title: 'Todo List is Going Crazy!',
+        tags: ['new'],
+        pages: [{
+          title: 'ch2 p01 title',
+          board: 1,
+        }, {
+          title: 'ch2 p02 title',
+          board: 2,
+        }, {
+          title: 'ch2 p03 title',
+          board: 3,
+        }, {
+          title: 'ch2 p04 title',
+          board: 4,
+        }, {
+          title: 'ch2 p05 title',
+          board: 5,
+        }, {
+          title: 'ch2 p06 title',
+          board: 6,
+        }, {
+          title: 'ch2 p07 title',
+          board: 7,
+        }, {
+          title: 'ch2 p08 title',
+          board: 8,
+        }, {
+          title: 'ch2 p09 title',
+          board: 9,
+        }, {
+          title: 'ch2 p10 title',
+          board: 10,
+        }, {
+          title: 'ch2 p11 title',
+          board: 11,
+        }, {
+          title: 'ch2 p12 title',
+          board: 12,
+        }],
+      }];
+
+      renderComic('comic-app', { book, chapters });
+    </script>
+  </body>
+</html>
